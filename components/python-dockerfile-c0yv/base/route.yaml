@@ -1,0 +1,23 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: python-dockerfile-c0yv
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: python-dockerfile-c0yv
+    app.kubernetes.io/part-of: my-app12345
+  name: python-dockerfile-c0yv
+  namespace: jkopriva-tenant
+spec:
+  port:
+    targetPort: 8080
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: python-dockerfile-c0yv
+    weight: 100
+status: {}

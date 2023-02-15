@@ -1,0 +1,15 @@
+apiVersion: pipelinesascode.tekton.dev/v1alpha1
+kind: Repository
+metadata:
+  annotations:
+    appstudio.openshift.io/application: my-app12345
+    appstudio.openshift.io/component: python-dockerfile-c0yv
+    build.appstudio.openshift.io/build: "true"
+    build.appstudio.openshift.io/type: build
+    build.appstudio.openshift.io/version: "0.1"
+    pipelines.appstudio.openshift.io/type: build
+  creationTimestamp: null
+  name: python-dockerfile-c0yv
+  namespace: jkopriva-tenant
+spec:
+  url: https://github.com/jkopriva/python-dockerfile
