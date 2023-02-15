@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: python-dockerfile-c0yv
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:jkopriva-tenant-python-dockerfile-c0yv
+      - image: quay.io/redhat-appstudio/user-workload@sha256:6108351407ff062f7c2e172ff52228f43a6cea266eae259e5cdfb66b41cd91ed
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
